@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Invector;
@@ -88,8 +88,7 @@ namespace HutongGames.PlayMaker.Actions
 			{
 				return;
 			}
-			
-			dam.damageValue = damageValue.Value;
+			dam = new vDamage(damageValue.Value);
 			dam.staminaBlockCost = staminaBlockCost.Value;
 			dam.staminaRecoveryDelay = staminaRecoveryDelay.Value;
 			dam.ignoreDefense = ignoreDefense.Value;
