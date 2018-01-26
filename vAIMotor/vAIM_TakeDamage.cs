@@ -102,7 +102,7 @@ namespace HutongGames.PlayMaker.Actions
 			dam.recoil_id = recoil_id.Value;
 			dam.reaction_id = reaction_id.Value;
 			dam.attackName = attackName.Value;
-			var vDam = dam;
+			var vDam = new vDamage(dam);
 			
 			theScript.TakeDamage(vDam, hitReaction.Value); 
 			if(sendEvent == null)
