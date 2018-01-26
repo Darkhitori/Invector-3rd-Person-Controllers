@@ -83,7 +83,7 @@ namespace HutongGames.PlayMaker.Actions
 			dam.activeRagdoll = activeRagdoll.Value;
 			dam.reaction_id = reaction_id.Value;
 			dam.attackName = attackName.Value;
-			var vDam = dam;
+			var vDam = new vDamage(dam);
 			
 			theScript.SetDamage(vDam);            
 		}
